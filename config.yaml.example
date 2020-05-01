@@ -1,0 +1,6 @@
+debug: false
+username: username
+password: password
+groups:
+  - Group 1
+  - Group 2

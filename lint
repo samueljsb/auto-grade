@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+if [[ $1 = "--fix" ]]; then
+    echo ">>> sorting imports..."
+    isort -rc .
+    echo ">>> auto-formatting..."
+    black .
+else
+    set -e
+    echo ">>> checking imports..."
+    isort -rc --check-only .
+    echo ">>> checking formatting..."
+    black --check .
+fi
+
+echo ">>> linting..."
+flake8 .
+echo ">>> checking types..."
+mypy .

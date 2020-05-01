@@ -1,0 +1,6 @@
+# Configuration
+config.yaml
+
+# Cache
+__pycache__
+.mypy_cache/
