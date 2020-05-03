@@ -6,7 +6,7 @@ authors = ["Samuel Searles-Bryant <devel@samueljsb.co.uk>"]
 license = "MIT"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
 selenium = "^3.141.0"
 pyyaml = "^5.3.1"
 
