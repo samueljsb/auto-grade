@@ -37,9 +37,7 @@ def student_needs_feedback(row: WebElement) -> bool:
     status = cells[3].text
     teacher_feedback = cells[-2].get_attribute("tick")
 
-    return (
-        status == "Completed" or status == "Incomplete" and teacher_feedback == "false"
-    )
+    return status in ("Completed", "Incomplete") and teacher_feedback == "false"
 
 
 def give_feedback_for_group(webdriver: WebDriver, group_name: str) -> None:
