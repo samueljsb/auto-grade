@@ -1,4 +1,5 @@
 import logging
+import time
 from typing import List
 
 from selenium.webdriver.common.by import By
@@ -16,7 +17,6 @@ from .utils import (
     wait_for_element_text_to_equal,
     wait_for_elements,
 )
-import time
 
 
 LOG = logging.getLogger(__name__)
@@ -50,7 +50,7 @@ def give_feedback_for_group(webdriver: WebDriver, group_name: str) -> None:
     LOG.info(f"Completing feedback for the group '{group_name}'")
 
     # Give feedback for tasks that need it.
-    completed_tasks = []
+    completed_tasks: List[str] = []
     while True:
         # Go to 'Tasks'.
         click_link(webdriver, "Tasks")
