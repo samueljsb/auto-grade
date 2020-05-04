@@ -1,5 +1,5 @@
 # Configuration
-config.yaml
+*.yaml
 
 # Environment
 venv/

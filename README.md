@@ -26,7 +26,13 @@ and fill in the values for your ActiveLearn teacher's username and password.
 Run the tool with
 
 ```shell
-python3 -m auto_grade
+auto-grade
+```
+
+You can also specify the config file:
+
+```shell
+auto-grade my-config.yaml
 ```
 
 [python]: https://www.python.org/
