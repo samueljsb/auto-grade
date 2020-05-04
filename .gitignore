@@ -1,9 +1,13 @@
 # Configuration
 config.yaml
 
+# Environment
+venv/
+
 # Cache
 __pycache__
 .mypy_cache/
 
 # Python
 *.egg-info/
+pip-wheel-metadata/

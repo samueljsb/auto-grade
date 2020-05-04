@@ -7,10 +7,10 @@ The script will only give feedback for configured groups.
 
 ## Installation
 
-Make sure you have [Python 3.8.0][python] or higher and [Poetry][poetry] installed.
+Make sure you have [Python 3.6][python] installed.
 
 ```shell
-poetry install --no-dev
+python -m pip install .
 ```
 
 ## Usage and Configuration
@@ -26,8 +26,7 @@ and fill in the values for your ActiveLearn teacher's username and password.
 Run the tool with
 
 ```shell
-poetry run python -m auto_grade
+python3 -m auto_grade
 ```
 
 [python]: https://www.python.org/
-[poetry]: https://python-poetry.org
